@@ -1,0 +1,59 @@
+/.phpunit.cache
+/node_modules
+/public/build
+/public/hot
+/public/storage
+/storage/*.key
+/vendor
+.env
+.env.backup
+.env.production
+.env.online
+.env.local
+.env.*.local
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+auth.json
+npm-debug.log
+yarn-error.log
+
+# IDE and Editor files
+/.fleet
+/.idea
+/.vscode
+.vscode/
+.DS_Store
+*.swp
+*.swo
+*~
+.sublime-workspace
+.sublime-project
+
+# OS and temporary files
+Thumbs.db
+.DS_Store
+*.log
+*.tmp
+
+# Local development
+.env.dusk.local
+.env.dusk.testing
+/storage/logs/*
+!/storage/logs/.gitkeep
+
+# Database files
+*.sqlite
+*.db
+*.sql
+
+# Nova & Third-party sensitive files
+/nova/
+.nova-manifest.json
+
+# Backup and archive files
+*.bak
+*.backup
+*.zip
+*.tar.gz
+*.rar

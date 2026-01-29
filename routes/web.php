@@ -1,0 +1,62 @@
+<?php
+
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Route;
+
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider and all of them will
+| be assigned to the "web" middleware group. Make something great!
+|
+*/
+
+Route::get('/', function () {
+    return view('welcome');
+});
+
+// Route::get('download/{filename}', function ($filename) {
+//     // Check if user is authenticated
+//     if (!Auth::check()) {
+//         abort(403);
+//     }
+
+//     // Check if file exists
+//     $filepath = storage_path('app/invoices/' . $filename);
+//     if (!file_exists($filepath)) {
+//         abort(404);
+//     }
+
+//     // Return a download response
+//     return response()->download($filepath);
+// })->name('nova.download');
+
+
+Route::get('download/{filename}', function ($filename) {
+    // Check if user is authenticated
+    if (!Auth::check()) {
+        abort(403);
+    }
+
+    // Check if file exists in 'app/invoices' directory
+    $filepath = storage_path('app/invoices/' . $filename);
+    if (file_exists($filepath)) {
+        // Return a download response
+        return response()->download($filepath);
+    }
+
+    // If it is a test result, check if file exists in 'app/test_results' directory
+    $filepath = storage_path('app/test_results/' . $filename);
+    if (file_exists($filepath)) {
+        // Return a download response
+        return response()->download($filepath);
+    }
+
+    // If file was not found in either directory, return a 404 response
+    abort(404);
+})->name('nova.download');
+
+
