@@ -1,5 +1,5 @@
 <footer>
     <div class="text-center">
-        Topic Laboratory &copy; {{ date('Y') }} All rights reserved.
+        Àyẹ̀wòsàn Laboratory Management System &copy; {{ date('Y') }} All rights reserved.
     </div>
 </footer>

@@ -56,7 +56,14 @@ class PrintTestResult extends Action
     
         // Save the PDF to a non-public directory
         $filename = 'test_results.pdf';
-        $filepath = storage_path('app/test_results/' . $filename);
+        $directory = storage_path('app/test_results');
+        
+        // Create directory if it doesn't exist
+        if (!file_exists($directory)) {
+            mkdir($directory, 0755, true);
+        }
+        
+        $filepath = $directory . '/' . $filename;
         file_put_contents($filepath, $dompdf->output());
     
         // Generate a URL for the file

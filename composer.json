@@ -21,6 +21,7 @@
         "laravel/sanctum": "^3.3",
         "laravel/tinker": "^2.8",
         "maatwebsite/laravel-nova-excel": "^1.3",
+        "outl1ne/nova-settings": "^5.3",
         "sereny/nova-permissions": "^1.4",
         "whitecube/nova-flexible-content": "^1.0"
     },
