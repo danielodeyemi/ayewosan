@@ -57,3 +57,8 @@ Thumbs.db
 *.zip
 *.tar.gz
 *.rar
+
+# Deployment files (keep local only)
+.env.production
+.env.staging
+deployment-package/
