@@ -99,7 +99,7 @@
                     <table>
                         <tr>
                             <td class="title">
-                                <img src={{ resource_path('/images/ayewosan_laboratory_logo.png') }} style="width: 90%; max-width: 300px" />
+                                <img src="data:image/png;base64,{{ base64_encode(file_get_contents(resource_path('images/ayewosan_laboratory_logo.png'))) }}" style="width: 90%; max-width: 300px" />
                             </td>
 
                             <td>
@@ -125,7 +125,7 @@
 
                             <td>
                                 <strong>Laboratory Details:</strong> <br />
-                                Àyẹ̀wòsàn Laboratory Management System<br />
+                                Àyewòsàn Laboratory Management System<br />
                                 Developed by Daniel Odeyemi<br />
                                 0701-234-5678
                             </td>

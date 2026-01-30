@@ -1,6 +1,12 @@
-# Laboratory Management Application
+# Àyewòsàn Laboratory Management Application
 
-A full-featured laboratory management system built with Laravel and Laravel Nova. It provides patient management, billing, lab test cataloging, lab results workflows, referral commission tracking, and payments handling for small-to-medium diagnostic laboratories.
+![Alt text](./storage/app/public/ayewosan_interface.gif)
+
+A full-featured, robust, Laboratory Information Management System (LIMS) built with Laravel. It is designed to bridge the gap between clinical testing and patient recovery by automating the complex workflows of modern medical laboratories.It provides patient management, billing, lab test cataloging, lab results workflows, referral commission tracking, and payments handling for small-to-medium diagnostic laboratories.
+
+## Àyewòsàn
+
+Àyewòsàn is a made-up word from the Yoruba language. It is a blend of two Yoruba words Àyẹ̀wò (Examination) and Ìwòsàn (Healing). is a robust, Laboratory Information Management System (LIMS) built with Laravel. It is designed to bridge the gap between clinical testing and patient recovery by automating the complex workflows of modern medical laboratories.
 
 ## Key Features
 
