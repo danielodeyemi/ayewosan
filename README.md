@@ -232,6 +232,7 @@ User journey summary:
 
 Mermaid flow:
 
+```mermaid
 flowchart TD
     A[Receptionist creates Patient] --> B[Create Bill]
     B --> C{Attach Lab Tests}
@@ -240,6 +241,7 @@ flowchart TD
     E --> F["Update Bill Amounts (Nova action)"]
     D --> G[Lab Technician records Results]
     G --> H[Result status -> Delivered]
+```
 
 Notes on logic:
 
@@ -258,10 +260,10 @@ Mermaid flow:
 ```mermaid
 flowchart LR
     P[Patient with Referrer] --> B[Bill created]
-    B -->|Payments recorded| T[Trigger commission calc]
-    T --> R[Create Referral Transaction (credit)]
+    B -->|"Payments recorded"| T[Trigger commission calc]
+    T --> R["Create Referral Transaction (credit)"]
     R --> S[Referrer account balance updated]
-    S -->|Payout requested| O[Referral Transaction (debit) recorded]
+    S -->|"Payout requested"| O["Referral Transaction (debit) recorded"]
 ```
 
 Notes on logic:
