@@ -1,5 +1,7 @@
 # Àyewòsàn Laboratory Management Application
 
+![Alt text](./ayewosan_interface.gif)
+
 ![Alt text](./storage/app/public/ayewosan_interface.gif)
 
 A full-featured, robust, Laboratory Information Management System (LIMS) built with Laravel. It is designed to bridge the gap between clinical testing and patient recovery by automating the complex workflows of modern medical laboratories.It provides patient management, billing, lab test cataloging, lab results workflows, referral commission tracking, and payments handling for small-to-medium diagnostic laboratories.
