@@ -158,8 +158,6 @@ php artisan view:clear
 3. Implement changes and tests
 4. Open a PR describing the change
 
-I can add `CONTRIBUTING.md` or CI workflow files on request.
-
 ## Make repository public (quick)
 
 ```bash
@@ -309,16 +307,3 @@ Notes on logic:
 2. The action recalculates totals from attached `LabTests` (patient_price), applies discounts, computes tax if any, updates `bills.total`, `bills.subtotal`, and `bills.discount`.
 3. Observers then evaluate referral commission eligibility and create `ReferralTransactions` if applicable.
 
-## Diagrams & Assets
-
-- The Mermaid diagrams above provide quick visualizations. If you want PNG/SVG exports, I can generate image assets and add them to `docs/` or `resources/docs/` for inclusion in the repo.
-
-## Next steps I can take (optional)
-
-- Generate PNG/SVG images from Mermaid diagrams and commit to `docs/`.
-- Create `CONTRIBUTING.md` and `CODE_OF_CONDUCT.md`.
-- Add a minimal GitHub Actions workflow for PHP unit tests and static analysis.
-
----
-
-If you'd like, I can now generate diagram images and add them to `docs/`, or create `CONTRIBUTING.md` next. Which would you prefer?
