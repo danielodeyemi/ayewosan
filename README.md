@@ -232,16 +232,14 @@ User journey summary:
 
 Mermaid flow:
 
-```mermaid
 flowchart TD
     A[Receptionist creates Patient] --> B[Create Bill]
     B --> C{Attach Lab Tests}
-    C --> D[Save Bill (amounts = 0 until Update)]
+    C --> D["Save Bill (amounts = 0 until Update)"]
     D --> E[Record Payments]
-    E --> F[Update Bill Amounts (Nova action)]
+    E --> F["Update Bill Amounts (Nova action)"]
     D --> G[Lab Technician records Results]
     G --> H[Result status -> Delivered]
-```
 
 Notes on logic:
 
