@@ -6,24 +6,19 @@ This directory contains everything you need to deploy your Laravel Lab Manager a
 
 ### Essential Guides (Read in Order)
 
-1. **[DEPLOYMENT_QUICK_REF.md](DEPLOYMENT_QUICK_REF.md)** ⭐ START HERE
-   - Quick reference for experienced deployers
-   - 5-minute deployment overview
-   - Common issues and solutions
-
-2. **[DEPLOYMENT_GUIDE.md](DEPLOYMENT_GUIDE.md)** 📖 COMPREHENSIVE
+1. **[DEPLOYMENT_GUIDE.md](DEPLOYMENT_GUIDE.md)** 📖 COMPREHENSIVE
    - Complete step-by-step instructions
    - Multiple deployment methods
    - Troubleshooting section
    - Performance optimization tips
 
-3. **[SECURITY_GUIDE.md](SECURITY_GUIDE.md)** 🔐 CRITICAL
+2. **[SECURITY_GUIDE.md](SECURITY_GUIDE.md)** 🔐 CRITICAL
    - Security hardening checklist
    - File permissions
    - .htaccess configuration
    - Best practices
 
-4. **[DEPLOYMENT_CHECKLIST.md](DEPLOYMENT_CHECKLIST.md)** ✅ REFERENCE
+3. **[DEPLOYMENT_CHECKLIST.md](DEPLOYMENT_CHECKLIST.md)** ✅ REFERENCE
    - Before, during, and after deployment tasks
    - Testing checklist
    - Maintenance schedule
