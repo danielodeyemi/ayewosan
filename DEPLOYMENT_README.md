@@ -1,4 +1,4 @@
-# Production Deployment - Complete Package
+# Deployment Guide for Production Environment
 
 This directory contains everything you need to deploy your Laravel Lab Manager application to a shared hosting environment securely and efficiently.
 
@@ -6,19 +6,31 @@ This directory contains everything you need to deploy your Laravel Lab Manager a
 
 ### Essential Guides (Read in Order)
 
-1. **[DEPLOYMENT_GUIDE.md](DEPLOYMENT_GUIDE.md)** 📖 COMPREHENSIVE
+1. NOTE THAT DUE TO COPYRIGHT ISSUES, THE NOVA PACKAGE IS **NOT INCLUDED** AS IT IS PAID. TO PURCHASE, PLEASE GO TO https://nova.laravel.com/
+   - To install the nova package, after purchase, copy the nova files (unzipped) to ./vendor/nova
+   - Point your composer file to the nova location (add as custom repo) by adding the code below to your composer.json file
+     ```json
+     "repositories": [
+        {
+        "type": "path",
+        "url": "./vendor/nova"
+        }
+        ],
+     ```
+
+3. **[DEPLOYMENT_GUIDE.md](DEPLOYMENT_GUIDE.md)** 📖 COMPREHENSIVE
    - Complete step-by-step instructions
    - Multiple deployment methods
    - Troubleshooting section
    - Performance optimization tips
 
-2. **[SECURITY_GUIDE.md](SECURITY_GUIDE.md)** 🔐 CRITICAL
+4. **[SECURITY_GUIDE.md](SECURITY_GUIDE.md)** 🔐 CRITICAL
    - Security hardening checklist
    - File permissions
    - .htaccess configuration
    - Best practices
 
-3. **[DEPLOYMENT_CHECKLIST.md](DEPLOYMENT_CHECKLIST.md)** ✅ REFERENCE
+5. **[DEPLOYMENT_CHECKLIST.md](DEPLOYMENT_CHECKLIST.md)** ✅ REFERENCE
    - Before, during, and after deployment tasks
    - Testing checklist
    - Maintenance schedule
